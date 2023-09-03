@@ -10,8 +10,9 @@ class PageModel:
 
 class BookModel:
 
-    def __init__(self, name: str, pages: list[PageModel]):
+    def __init__(self, name: str, author: str, pages: list[PageModel]):
         self.name = name
+        self.author = author
         self.pages = pages
 
 
@@ -23,7 +24,7 @@ class Repository:
 
 GLOBAL_REPO: Repository = Repository([
     BookModel(
-        "호두까기 인형", [
+        "호두까기 인형", "차이코프스키", [
             PageModel("""
 충실한 나의 부하 북치기 변정이여, 행진곡을 쳐라!"
 호두까기 인형이 우렁차게 외치자 즉시 북치는 병정이 가장 기이한 방식으로 북을 둥둥 두드리기 시작해서

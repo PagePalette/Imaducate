@@ -11,3 +11,5 @@ MODE = {
     "release": RELEASE_MODE,
     "testing": TEST_MODE
 }[cf['deploy-mode']]
+
+print("MODE: ", MODE)
